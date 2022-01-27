@@ -1,75 +1,140 @@
-# Jekyll GitBook
+# The Minimalist theme
 
-Make Jelly site have a GitBook look!
+*Minimalist is a Jekyll theme, inspired by the [Minimalist](https://github.com/BDHU/minimalist) theme. You can [preview the theme to see what it looks like](http://bdhu.github.io/minimalist), or even [use it today](#usage).*
 
-## Demo
+![Demo of Minimalist](https://raw.githubusercontent.com/BDHU/minimalist/main/minimalist.png)
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+## Usage
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
+To use the Minimalist theme:
 
-## Why Jekyll with GitBook
+1. Add the following line to your Gemfile
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
-
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
-
-## How to Get Started
-
-This theme can be used just as other [Jekyll themes][1].
-
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
-
-### Deploy Locally with Jekyll Serve
-
-This theme can be ran locally using Ruby and Gemfiles.
-
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
-
-## Full-text search
-
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
-
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
+```ruby
+gem "jekyll-remote-theme"
 ```
 
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./gitbook/rouge/](./gitbook/rouge/).
+then run `bundle install` to install the plugin.
 
-## How to generate TOC
+2. Add the following to your site's `_config.yml` to activate the plugin:
 
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
+```yml
+plugins:
+  - jekyll-remote-theme
 ```
 
-## License
+Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
 
-This work is open sourced under the Apache License, Version 2.0.
+3. Add the following line to your `config.yml` to use the theme
 
-Copyright 2019 Tao He.
+```yml
+remote_theme: BDHU/minimalist
+```
 
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
+then running `bundle exec jekyll serve` for local deployment. Here is a [demo](https://github.com/BDHU/bdhu.github.io) using this theme.
+
+An example `_config.yml` file can be found [here](https://github.com/BDHU/bdhu.github.io/blob/master/_config.yml). More info can be found at [Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme).
+
+## Customizing
+
+### Configuration variables
+
+Minimalist will respect the following variables, if set in your site's `_config.yml`:
+
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
+```
+
+Additionally, you may choose to set the following optional variables:
+
+```yml
+google_analytics: [Your Google Analytics tracking ID]
+```
+
+Choose light, dark, or automatically adjusting theme based on system theme:
+
+```yml
+color-scheme: auto/light/dark
+```
+
+Specify logo for the website:
+
+```yml
+logo: /assets/img/<logo_file>
+```
+
+Enable favicon by putting a `favicon.ico` in the repo's root directory and add the following line in `config.yml`:
+
+```yml
+favicon: true
+```
+
+### Customizing Sidebar
+
+You can define a list of platforms that are linked from the sidebar in `_config.yml`:
+
+```yml
+sidebar:
+  - name: Google Scholar
+    icon: fa-solid fa-user-graduate
+    link: https://scholar.google.com/citations?user=zR6afi8AAAAJ
+  - name: GitHub
+    icon: fa-brands fa-github
+    link: https://github.com/BDHU
+  - ...
+```
+
+For further customization of the sidebar, go to [sidebar.html](https://github.com/BDHU/minimalist/blob/main/_includes/sidebar.html) in this repo and modify it however you like. The [link-mobile.html](https://github.com/BDHU/minimalist/blob/main/_includes/links-mobile.html) customizes the sidebar's look on mobile devices.
+
+### Stylesheet
+
+If you'd like to add your own custom styles:
+
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+
+    ```scss
+    ---
+    ---
+
+    @import "{{ site.theme }}";
+    ```
+
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+
+### Layouts
+
+If you'd like to change the theme's HTML layout:
+
+1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/BDHU/minimalist/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/BDHU/minimalist/blob/master/_layouts/default.html).
+2. For more extensive changes, [copy the original template](https://github.com/BDHU/minimalist/blob/master/_layouts/default.html) from the theme's repository<br/>(*Pro-tip: click "raw" to make copying easier*)
+3. Create a file called `/_layouts/default.html` in your site
+4. Paste the default layout content copied in the first step
+5. Customize the layout as you'd like
+
+For example, this [repository](https://github.com/BDHU/bdhu.github.io) shows how customizations are made on the original theme.
+
+### Customizing Google Analytics code
+
+Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+
+## Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/BDHU/minimalist`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+## Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+
+## Contributors
+
+Special thanks to [@godalming123](https://github.com/godalming123) for adding dark mode support. Also thank [@solvaholic](https://github.com/solvaholic), [@tildehacker](https://github.com/tildehacker), and other contributors for making multiple bug fixes and improvements. All contributions are welcome.
