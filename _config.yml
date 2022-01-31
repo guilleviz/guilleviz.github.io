@@ -12,7 +12,7 @@ plugins:
 
 sidebar:
   - name: LinkedIn
-    icon: fa-solid fa-linked-in
+    icon: fa-brands fa-linked-in
     link: https://www.linkedin.com/in/gvizroman/
   - name: GitHub
     icon: fa-brands fa-github
