@@ -12,11 +12,11 @@ plugins:
 
 sidebar:
   - name: LinkedIn
-    icon: fa-brands fa-linked-in
+    icon: 
     link: https://www.linkedin.com/in/gvizroman/
   - name: GitHub
-    icon: fa-brands fa-github
+    icon: 
     link: https://github.com/guilleviz
   - name: Twitter
-    icon: fa-brands fa-twitter
+    icon: 
     link: https://twitter.com/vizcainoguille

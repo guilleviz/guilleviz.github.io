@@ -2,8 +2,7 @@
 layout: default
 ---
 
-# Header 1
-
+# Informe de Coyuntura
 
 
 El objetivo de este informe es conseguir analizar los ciclos de la economía vasca en el corto plazo. Además, en qué momento del ciclo se encuentra ésta a través de datos trimestrales, y, en momentos enlos que no se disponían, datos mensuales o anuales.
