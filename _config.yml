@@ -1,7 +1,7 @@
 title: Guillermo Vizcaíno Román
-logo: /Foto-carnet.jpg
-email: gvizroman@gmail.com
-description: Analista Económico
+logo: /Foto-carnet.png
+email: guillevzn@gmail.com
+description: Data Analyst
 show_downloads: false
 google_analytics: UA-108144808-1
 color-scheme: light
@@ -13,10 +13,10 @@ plugins:
 sidebar:
   - name: LinkedIn
     icon: 
-    link: https://www.linkedin.com/in/gvizroman/
+    link: https://www.linkedin.com/in/guillevzn/
   - name: GitHub
     icon: 
-    link: https://github.com/guilleviz
+    link: https://github.com/guillevzn
   - name: Twitter
     icon: 
-    link: https://twitter.com/vizcainoguille
+    link: https://twitter.com/guillevzn

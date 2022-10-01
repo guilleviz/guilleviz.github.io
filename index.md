@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Informe de Coyuntura
+# Curriculumn vitae
 
 
 El objetivo de este informe es conseguir analizar los ciclos de la economía vasca en el corto plazo. Además, en qué momento del ciclo se encuentra ésta a través de datos trimestrales, y, en momentos enlos que no se disponían, datos mensuales o anuales.
@@ -13,4 +13,8 @@ La economía vasca es una de las más industrializadas de España, lo cual lo ob
 
 >La totalidad de este informe se ha realizado en Python.
 
-[Informe de Coyuntura País Vasco](./coyuntura-pais-vasco.html).
+[CV - Guillermo Vizcaíno Román](./cv.html).
+
+
+
+# Projects
