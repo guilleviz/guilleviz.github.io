@@ -11,9 +11,9 @@ Between moments of success and failure, I managed to learn what my present is to
 My bachelor's has taught me complex understanding of mathematics and statistics through econometrics applications and modelling to continue my path on machine learning and Big Data. The use of different tools for data analysis and modeling, be it Python, Stata, MATLAB, have given me skills with the ability to identify patterns and synthesis. In addition to a differentiating detail, the economic aspect which allows me to reach conclusions in an applied way.
 
 And finally, I consider myself a "geek" of data and continuous learning.
-.
 
-[Curriculum vitae - Guillermo Vizcaíno Román](./cv.html).
+
+[Curriculum Vitae - Guillermo Vizcaíno](./cv.html).
 
 
 
