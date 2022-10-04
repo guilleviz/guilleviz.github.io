@@ -4,13 +4,16 @@ email: guillevzn@gmail.com
 description: Data Analyst
 show_downloads: false
 google_analytics: UA-108144808-1
-color-scheme: light
+color-scheme: dark
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
 
 sidebar:
+  - name: Curriculum Vitae
+    icon: 
+    link: https://guillevzn.github.io/cv.html
   - name: LinkedIn
     icon: 
     link: https://www.linkedin.com/in/guillevzn/
