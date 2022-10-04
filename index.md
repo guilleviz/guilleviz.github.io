@@ -13,8 +13,4 @@ My bachelor's has taught me complex understanding of mathematics and statistics 
 And finally, I consider myself a "geek" of data and continuous learning.
 
 
-[Curriculum Vitae - Guillermo Vizcaíno](./cv.html).
-
-
-
 # Projects
