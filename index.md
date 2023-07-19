@@ -25,11 +25,6 @@ I am a data-driven professional with a BSc in Economic Analysis, specialising in
 </p>
 
 <p>
-  <a href="https://github.com/guillevzn/easyfred" title="easyfred">easyfred</a> - 
-  Easy to use Fred API with Python.
-</p>
-
-<p>
   <a href="Situation_Report_of_the_Municipality_of_Seville.html" title="Situation Report of the Municipality of Seville">Situation Report of the Municipality of Seville</a> - 
   Final degree project.
 </p>
