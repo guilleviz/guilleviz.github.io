@@ -2,16 +2,41 @@
 layout: default
 ---
 
-A young mind with an entrepreneurial attitude.
+Data Analyst with Expertise in Machine Learning and Quantitative Methods
 
-After having started my time at university, I began to undertake with those who would be my colleagues from our start-up, UNMUTE. After two years of sacrifices and constant learning, we decided not to continue with this project.
+Welcome to my professional profile! I am a data-driven professional with a BSc in Economic Analysis, specialising in Econometrics and Quantitative Economics. My passion lies in the intersection of data analysis, machine learning, and quantitative methods, allowing me to excel in driving data-driven insights and innovation.
 
-Between moments of success and failure, I managed to learn what my present is today, data science and data analysis.
+Education and Skill Highlights:
 
-My bachelor's has taught me complex understanding of mathematics and statistics through econometrics applications and modelling to continue my path on machine learning and Big Data. The use of different tools for data analysis and modeling, be it Python, Stata, MATLAB, have given me skills with the ability to identify patterns and synthesis. In addition to a differentiating detail, the economic aspect which allows me to reach conclusions in an applied way.
+📚 BSc in Economic Analysis: My academic journey provided me with a strong grasp of economic principles and advanced quantitative methodologies. My skills in handling intricate data enable me to derive meaningful insights.
 
-And finally, I consider myself a "geek" of data and continuous learning.
+📈 Econometrics and Quantitative Economics: My expertise in econometric modelling, time series analysis, and forecasting empowers me to analyse complex datasets and make informed decisions.
+
+Professional Profile:
+
+With a strong foundation in data analysis, I thrive on challenges and seek innovative approaches to drive data-driven solutions. My experience includes exploring machine learning applications, enhancing my predictive modelling capabilities, ETL processes and SQL knowledge.
+
+Key Strengths:
+
+📊 Data Analysis and Visualisation: Proficient in collecting, cleaning, and transforming data into actionable insights. My data visualisation skills support strategic decision-making.
+
+🔍 Pattern Recognition: A keen eye for identifying hidden opportunities, leveraging econometric methods and statistical techniques.
+
+💼 Quantitative Methods Savvy: A strong foundation in quantitative methods for navigating data complexities and optimising strategies.
+
+💡 Innovation and Problem-Solving: Thriving on challenges and constantly seeking innovative approaches to drive data-driven solutions.
+
+🤝 Collaborative Team Player: A firm believer in the power of teamwork, contributing effectively in cross-functional collaborations.
+
+Continuous Learning and Growth:
+
+Committed to continuous learning, staying updated on industry trends, and embracing new methodologies.
 
 
 # Projects
+<p>
+  <a href="https://github.com/guillevzn/easyfred" title="easyfred">easyfred</a> - 
+  Easy to use Fred API with Python.
+</p>
+
 <a href="Situation_Report_of_the_Municipality_of_Seville.html" title="Situation Report of the Municipality of Seville">Situation Report of the Municipality of Seville</a>
